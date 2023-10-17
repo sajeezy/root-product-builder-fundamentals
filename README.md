@@ -1,6 +1,6 @@
-# Getting started on Root
+<img src="root-logo.png"  height="100">
 
-![Root Logo](root-logo.png)
+# Getting started on Root
 
 **Welcome to your exciting onboarding journey with Root!** 🥳
 
