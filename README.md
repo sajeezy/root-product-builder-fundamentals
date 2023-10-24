@@ -4,9 +4,9 @@
 
 **Welcome to your exciting onboarding journey with Root!** 🥳
 
-This repository is your guiding light for stepping onto the Root platform. It's your toolkit for crafting a stellar Product Module as part of your onboarding adventure. Why? So that our brilliant Root Solutions Engineer can be your technical Sherpa, supporting you and reviewing your amazing progress in each section.
+This repository is your guiding light for stepping onto the Root platform. It's your toolkit for crafting a stellar Product Module as part of your onboarding adventure. Why? So that our Root Solutions Engineer can be your technical Sherpa, supporting you and reviewing your progress in each section.
 
-Now, let's dive into the nitty-gritty. Our onboarding is a fantastic 10-part voyage:
+Now, let's dive into the nitty-gritty. Our onboarding is a 10-part voyage:
 
 - **Part 1**: Setting up and tweaking
 - **Part 2**: Crafting and validating quotes
@@ -21,7 +21,7 @@ Now, let's dive into the nitty-gritty. Our onboarding is a fantastic 10-part voy
 
 Once you conquer these 10 parts and commit your code, you'll have proudly sculpted a Product Module on Root using our most trusted tools and methods.
 
-In the following sections, you'll find all the resources and materials to guide you through each of these thrilling parts.
+In the following sections, you'll find all the resources and materials to guide you through each of these parts.
 
 # Onboarding Material
 
