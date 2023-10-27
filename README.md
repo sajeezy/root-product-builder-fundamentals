@@ -8,16 +8,35 @@ This repository is your guiding light for stepping onto the Root platform. It's 
 
 Now, let's dive into the nitty-gritty. Our onboarding is a 10-part voyage:
 
-- **Part 1**: Setting up and tweaking
-- **Part 2**: Crafting and validating quotes
-- **Part 3**: Mastering the art of application and policy creation
-- **Part 4**: Elevating policies with alteration hooks
-- **Part 5**: Navigating with lifecycle hooks and reactivation
-- **Part 6**: Unleashing scheduled functions for anniversary magic
-- **Part 7**: Crafting documents and communication marvels
-- **Part 8**: Building an epic claims flow
-- **Part 9**: Getting your product Embed-ready
-- **Part 10**: Tying up the loose ends
+**Part 1: Setting up Workbench and Configuring a Product Module**
+In this section, you'll get acquainted with Workbench, our development environment, and learn how to configure your product module. 
+
+**Part 2: Validating and Creating Quotes**
+Creating accurate quotes is crucial in our platform. Pay close attention to data validation and quote creation processes. 
+
+**Part 3: Validating and Creating Applications and Policies**
+Here, you'll explore the creation of applications and policies. Ensure you understand the validation criteria and how they relate to the Root platform. 
+
+**Part 4: Amending Policies with Alteration Hooks**
+Understanding alteration hooks is essential for policy management. Take the time to comprehend how these hooks work and how to implement them effectively. 
+
+**Part 5: Lifecycle Hooks and Reactivation**
+Learn how to manage policy lifecycles and policy reactivation. These hooks are pivotal for maintaining policies effectively. 
+
+**Part 6: Scheduled Functions and Anniversary Logic**
+Scheduled functions and anniversary logic are integral for policy maintenance. Pay attention to how these work and leverage them for your product module. 
+
+**Part 7: Crafting Documents and Documentation**
+Accurate and clear documentation is vital. In this section, you'll explore creating documents. Make sure your documentation is precise and thorough. 
+
+**Part 8: Building a Claims and Payout Flow**
+Claims and payouts are critical components of insurance. Understand the flow thoroughly, and ensure your implementation aligns with industry best practices.
+
+**Part 9: Whitelabeling Your Product with Root Embed**
+Explore whitelabeling options to customize your product with Root Embed. Ensure you're aware of the branding and customization possibilities. 
+
+**Part 10: Tying Up the Loose Ends**
+In the final part, we'll address any remaining questions and provide you with additional resources for ongoing support. 
 
 Once you conquer these 10 parts and commit your code, you'll have proudly sculpted a Product Module on Root using our most trusted tools and methods.
 
