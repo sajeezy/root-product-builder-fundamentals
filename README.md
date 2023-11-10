@@ -2,32 +2,17 @@
 
 # Getting started on Root
 
-**Welcome to your exciting onboarding journey with Root!** 🥳
+**Welcome to the Root Product Builder Fundamentals Course!** 🥳
 
-This repository is your guiding light for stepping onto the Root platform. It's your toolkit for crafting a stellar Product Module as part of your onboarding adventure. Why? So that our Root Solutions Engineer can be your technical Sherpa, supporting you and reviewing your progress in each section.
-
-Now, let's dive into the nitty-gritty. Our onboarding is a 10-part voyage:
-
-- **Part 1: Setting up Workbench and Configuring a Product Module**
-- **Part 2: Validating and Creating Quotes**
-- **Part 3: Validating and Creating Applications and Policies**
-- **Part 4: Amending Policies with Alteration Hooks**
-- **Part 5: Lifecycle Hooks and Reactivation**
-- **Part 6: Scheduled Functions and Anniversary Logic**
-- **Part 7: Crafting Documents and Documentation**
-- **Part 8: Building a Claims and Payout Flow**
-- **Part 9: Whitelabeling Your Product with Root Embed**
-- **Part 10: Tying Up the Loose Ends**
-  
-Once you conquer these 10 parts and commit your code, you'll have proudly sculpted a Product Module on Root using our most trusted tools and methods.
+This repository is your starting point for building insurance products on the Root platform. This repo should be forked into your own public repository, and once you get started with the course, the Root Product Module will be cloned into this repository. The course is divided into different parts and, as explicated in the course material, on completion of each part a pull request (PR) should be made for a Root Solutions Engineer to review to ensure that you're on the right track and ready to start with the next section. 
 
 In the following sections, you'll find all the resources and materials to guide you through each of these parts.
 
 # Onboarding Material
 
-As previously mentioned, our onboarding journey comprises 10 unique segments. To master them all, you'll need to explore the detailed materials below, expertly tailored to each part. These documents break down the specifics for each part and provide clear criteria for success. We've also included links to related guides and examples to supercharge your progress.
+As previously mentioned, our Product Builder Fundamental Course comprises unique segments. To master them all, you'll need to explore the detailed materials below, tailored to each part. These documents break down the specifics for each part and provide clear criteria for success. We've also included links to related guides and examples to supercharge your progress.
 
-- [Root External Developer Onboarding Guide](#)
+- [Root External Developer Onboarding Guide](https://docs.google.com/document/d/1ryyE2OWaEPkStUwDpwCsD2UwwdzNvCxU4oVwIQkqsoA/edit#heading=h.ypnxqcrdxijk)
 
 # Root Guides and Documentation
 
