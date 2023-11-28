@@ -1,29 +1,19 @@
 ### Which part of the onboarding is this for?
 
-- [ ] Part 1: Setup and settings
-- [ ] Part 2: Quote creation and validation
-- [ ] Part 3: Application & policy creation and validation
-- [ ] Part 4: Updating a policy with alteration hooks
-- [ ] Part 5: Using lifecycle hooks with reactivation
-- [ ] Part 6: Using scheduled functions to apply anniversary logic
-- [ ] Part 7: Creating documents and communication events
-- [ ] Part 8: Creating a claims flow
-- [ ] Part 9: Getting the product Embed ready
-- [ ] Part 10: Wrapping up
-
-### What has been implemented in this PR
+- [ ] Part 1: Getting Set Up with Your First Product
+- [ ] Part 2: Generating Insurance Quotes
+- [ ] Part 3: Issuing Policies
+- [ ] Part 4: Part 4: Amending Policies with Alteration Hooks
+- [ ] Part 5: Lifecycle Hooks and Reactivation
+- [ ] Part 6: Scheduled Functions and Anniversary Logic
+- [ ] Part 7: Crafting Documents and Documentation
+- [ ] Part 8: Building a Claims and Payout Flow
+- [ ] 
+### What has been implemented in this PR?
 
 (The "what" of the PR should be a clearly defined title in present tense i.e "Add Reactivation Logic")
 
-### How was it implemented?
-
-(This should be as succinct pseudo code as possible i.e)
-
-### Root specification section link
-
-[ Add the section link here for the Root Spec Doc]()
-
-### Testing plan
+### How was testing done?
 
 **Types of tests required**
 
@@ -49,7 +39,10 @@
 
 ### Feedback and review
 
-[Please add any feedback here]:
+#### Were the specifications and Root guides clear enough?
 
-- Was the specification clear enough?
-- Was the Root documentation and guides clear enough?
+#### What could have been explicated better to make this part easier to understand?
+
+### Part Specific Questions
+
+// Add your answers here for part specific questions, if necessary 
