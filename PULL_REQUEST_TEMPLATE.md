@@ -8,7 +8,7 @@
 - [ ] Part 6: Scheduled Functions and Anniversary Logic
 - [ ] Part 7: Crafting Documents and Documentation
 - [ ] Part 8: Building a Claims and Payout Flow
-- [ ] 
+
 ### What has been implemented in this PR?
 
 (The "what" of the PR should be a clearly defined title in present tense i.e "Add Reactivation Logic")
