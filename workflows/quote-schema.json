@@ -46,10 +46,10 @@
     ]
   },
   {
-    "key": "birth_year",
+    "key": "birth_date",
     "type": "number",
     "label": "Birth year *",
-    "outputPath": "birth_year",
+    "outputPath": "birth_date",
     "validators": [
       {
         "validation": {
