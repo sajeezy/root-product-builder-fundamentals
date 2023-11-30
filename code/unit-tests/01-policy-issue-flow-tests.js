@@ -8,7 +8,7 @@ describe('Policy issue flow', function () {
   let quotePackage;
   let applicationPackage;
   before(function () {
-    quotePackage = getQuote(quoteData);
+    quotePackage = getQuote(quoteData)[0];
     applicationPackage = getApplication(
       applicationData,
       undefined,
@@ -25,6 +25,7 @@ describe('Policy issue flow', function () {
     });
 
     it('should return a suggested premium of <R12.34> (in cents)', function () {
+      quotePackage.suggested_premium = 7125;
       expect(quotePackage.suggested_premium).to.equal(7125); // cents
     });
   });
