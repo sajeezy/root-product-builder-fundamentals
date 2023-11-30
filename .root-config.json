@@ -1,0 +1,152 @@
+{
+  "$schema": "https://sandbox.rootplatform.com//v1/cli/json-schemas/root-config",
+  "productModuleName": "DinoSure Protection",
+  "productModuleKey": "dinosure_course_steven",
+  "organizationId": "51f71fa3-2afe-456a-80a7-2074a3070086",
+  "host": "https://sandbox.rootplatform.com/",
+  "codeFileOrder": [
+    "main.js",
+    "00-helper-functions.js",
+    "01-ratings.js",
+    "02-quote-hook.js",
+    "03-application-hook.js",
+    "04-policy-hook.js",
+    "05-alteration-hooks.js",
+    "06-scheduled-functions.js",
+    "07-reactivation-flow.js",
+    "08-lifecycle-hooks.js"
+  ],
+  "settings": {
+    "policySchemeType": "individual",
+    "dashboardIssuingEnabled": true,
+    "activatePoliciesOnEvent": "policy_issued",
+    "canReactivatePolicies": true,
+    "notTakenUpEnabled": false,
+    "welcomeLetterEnabled": false,
+    "policyDocuments": [
+      {
+        "type": "terms",
+        "fileName": "policy_{{ policy.policy_number }}_terms"
+      },
+      {
+        "type": "policy_schedule",
+        "fileName": "policy_{{ policy.policy_number }}_schedule"
+      },
+      {
+        "type": "certificate",
+        "enabled": false
+      }
+    ],
+    "canRequote": false,
+    "policyActivationEvent": "policy_issued",
+    "gracePeriod": {
+      "lapseOn": {
+        "afterFirstMissedPayment": null,
+        "consecutiveMissedPayments": {
+          "number": 2
+        },
+        "missedPaymentsOverPolicyTerm": null,
+        "missedPaymentsWithinPeriod": null
+      },
+      "lapseExclusionRules": {
+        "lapsePolicyWithProcessingPayment": false
+      }
+    },
+    "waitingPeriod": {
+      "applyTo": {
+        "theFullPolicy": null
+      }
+    },
+    "coolingOffPeriod": {
+      "applyTo": {
+        "theFullPolicy": {
+          "refundType": "all_premiums",
+          "period": 31,
+          "periodType": "months"
+        }
+      }
+    },
+    "policyAnniversaryNotification": null,
+    "policyholder": {
+      "individualsAllowed": true,
+      "individualsIdAllowed": true,
+      "individualsPassportAllowed": false,
+      "individualsCellphoneAllowed": false,
+      "individualsCustomIdAllowed": false,
+      "individualsEmailAllowed": false,
+      "companiesAllowed": false,
+      "idCountry": false,
+      "individualPolicyholderFields": {
+        "address": {
+          "suburb": {
+            "required": true
+          }
+        },
+        "dateOfBirth": {
+          "required": true
+        }
+      }
+    },
+    "beneficiaries": {
+      "makePolicyholderABeneficiary": true,
+      "min": 1,
+      "max": 1
+    },
+    "claims": {
+      "checklistItems": [],
+      "documentLabels": []
+    },
+    "billing": {
+      "allowStartDateChange": false,
+      "billBeforeWeekendEnabled": false,
+      "billingFrequency": "monthly",
+      "consecutiveFailedPaymentsAllowed": 4,
+      "currency": "ZAR",
+      "enableBillingOnSandbox": false,
+      "paymentSubmissionLeadTime": 0,
+      "clientStatementReference": "DINOSURE",
+      "paymentMethodTypes": {
+        "debitOrders": {
+          "enabled": true,
+          "strategy": "best_effort",
+          "naedoPoliciesInArrears": false
+        },
+        "card": {
+          "enabled": false
+        },
+        "eft": {
+          "enabled": false
+        },
+        "external": {
+          "enabled": false,
+          "createPayments": false
+        },
+        "collectionModules": []
+      },
+      "retryFailedPayments": {
+        "enabled": true,
+        "daysBetweenRetries": 0,
+        "numberOfRetries": 0
+      },
+      "proRataBilling": {
+        "enabled": true,
+        "proRataBillingOnIssue": false,
+        "minimumAmount": 10000
+      }
+    }
+  },
+  "alterationHooks": [],
+  "scheduledFunctions": [],
+  "fulfillmentTypes": [
+    {
+      "key": "extraction",
+      "label": "Extraction",
+      "fulfillmentData": {
+        "extraction_date": {
+          "label": "Date of extraction",
+          "valueType": "string"
+        }
+      }
+    }
+  ]
+}

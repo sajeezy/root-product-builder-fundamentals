@@ -107,3 +107,6 @@ dist
 .DS_Store
 
 Archive/code/env.js
+# Ignore Root authentication file
+.root-auth
+sandbox/output/*
