@@ -2,9 +2,9 @@
 
 # Getting started on Root
 
-**Welcome to the Root Product Builder Fundamentals Course** 
+**Welcome to the Root Product Builder Fundamentals Course**
 
-This repository is your starting point for building insurance products on the Root platform. This repo should be forked into your own public repository, and once you get started with the course, the Root Product Module will be cloned into this repository. The course is divided into different parts and, as explicated in the course material, on completion of each part a pull request (PR) should be made for a Root Solutions Engineer to review to ensure that you're on the right track and ready to start with the next section. 
+This repository is your starting point for building insurance products on the Root platform. This repo should be forked into your own public repository, and once you get started with the course, the Root Product Module will be cloned into this repository. The course is divided into different parts and, as explicated in the course material, on completion of each part a pull request (PR) should be made for a Root Solutions Engineer to review to ensure that you're on the right track and ready to start with the next section.
 
 In the following sections, you'll find all the resources and materials to guide you through each of these parts.
 
