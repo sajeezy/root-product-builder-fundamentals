@@ -74,7 +74,7 @@
       "individualsCustomIdAllowed": false,
       "individualsEmailAllowed": false,
       "companiesAllowed": false,
-      "idCountry": false,
+      "idCountry": "false",
       "individualPolicyholderFields": {
         "address": {
           "suburb": {
@@ -123,7 +123,7 @@
         "collectionModules": []
       },
       "retryFailedPayments": {
-        "enabled": true,
+        "enabled": false,
         "daysBetweenRetries": 0,
         "numberOfRetries": 0
       },
