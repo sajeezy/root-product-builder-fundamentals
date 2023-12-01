@@ -13,6 +13,14 @@ const quoteData = {
   health_checks_updated: true,
 };
 
+const invalidQuoteData = {
+  cover_amount: 10000,
+  birth_date: 1947,
+  species: 'Tyrannosaurus',
+  start_date: '2023-1-15',
+  health_checks_updated: true,
+};
+
 // Example application data
 const applicationData = {
   // app-data
