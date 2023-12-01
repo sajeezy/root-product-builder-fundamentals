@@ -1,7 +1,8 @@
 [
   {
     "key": "species",
-    "type": "select",
+    "type": "dropdown",
+    "outputPath": "species",
     "label": "Species *",
     "options": [
       {
@@ -25,7 +26,6 @@
         "value": "iguanodon"
       }
     ],
-    "outputPath": "species",
     "validators": [
       {
         "validation": {
