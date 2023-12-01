@@ -50,25 +50,7 @@ const validateQuoteRequest = (data) => {
  */
 
 const getQuote = (data) => {
-  const age = moment().year() - data.birth_date;
-  let corePremium = data.cover_amount * (0.01 * (age * 0.001));
-  if (data.species === 'Tyrannosaurus Rex') {
-    corePremium = 0.81 * corePremium;
-  } else if (data.species === 'Stegosaurus') {
-    corePremium = 1.19 * corePremium;
-  } else if (data.species === 'Velociraptor') {
-    corePremium = 0.76 * corePremium;
-  } else if (data.species === 'Brachiosaurus') {
-    corePremium = 1.32 * corePremium;
-  } else if (data.species === 'Iguanodon') {
-    corePremium = 1.07 * corePremium;
-  }
-
-  if (!data.health_checks_updated) {
-    corePremium = corePremium + 2500;
-  }
-
-  const premium = Math.round(corePremium);
+  const premium = calculatePremium(data);
 
   const quotePackage = new QuotePackage({
     // Below are standard fields for all products
