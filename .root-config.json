@@ -74,7 +74,7 @@
       "individualsCustomIdAllowed": false,
       "individualsEmailAllowed": false,
       "companiesAllowed": false,
-      "idCountry": "false",
+      "idCountry": false,
       "individualPolicyholderFields": {
         "address": {
           "suburb": {
