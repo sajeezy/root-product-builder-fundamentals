@@ -30,7 +30,8 @@ const validateQuoteRequest = (data) => {
           .required(),
         birth_date: Joi.number()
           .integer()
-          .max(moment().year() - 50)
+          .min(moment().year() - 50)
+          .max(moment().year())
           .required(),
         health_checks_updated: Joi.boolean().required(),
       })
