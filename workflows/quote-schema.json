@@ -1,29 +1,29 @@
 [
   {
     "key": "species",
-    "type": "dropdown",
+    "type": "select",
     "outputPath": "species",
     "label": "Species *",
     "options": [
       {
         "label": "Tyrannosaurus Rex",
-        "value": "tyrannosaurusRex"
+        "value": "Tyrannosaurus Rex"
       },
       {
         "label": "Stegosaurus",
-        "value": "stegosaurus"
+        "value": "Stegosaurus"
       },
       {
         "label": "Velociraptor",
-        "value": "velociraptor"
+        "value": "Velociraptor"
       },
       {
         "label": "Diplodocus",
-        "value": "diplodocus"
+        "value": "Diplodocus"
       },
       {
         "label": "Iguanodon",
-        "value": "iguanodon"
+        "value": "Iguanodon"
       }
     ],
     "validators": [
