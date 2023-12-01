@@ -6,7 +6,19 @@
 
 // Example quote data
 const quoteData = {
-  // quote-data
+  cover_amount: 1000000,
+  birth_date: '1977-12-15',
+  species: 'Tyrannosaurus Rex',
+  start_date: '2023-12-15',
+  health_checks_updated: true,
+};
+
+const invalidQuoteData = {
+  cover_amount: 10000,
+  birth_date: '1947-12-15',
+  species: 'Tyrannosaurus',
+  start_date: '2023-1-15',
+  health_checks_updated: true,
 };
 
 // Example application data

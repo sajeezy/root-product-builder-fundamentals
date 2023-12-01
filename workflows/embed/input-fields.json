@@ -101,35 +101,35 @@
     }
   },
   "beneficiaries": {
+    "email": {
+      "label": "Email address"
+    },
     "title": {
       "label": "Title"
     },
-    "firstName": {
-      "label": "Name"
+    "gender": {
+      "label": "Gender"
+    },
+    "idType": {
+      "label": "Identification type"
     },
     "lastName": {
       "label": "Surname"
     },
+    "cellphone": {
+      "label": "Mobile number"
+    },
+    "firstName": {
+      "label": "Name"
+    },
     "relationship": {
       "label": "Relationship"
-    },
-    "idType": {
-      "label": "Identification type"
     },
     "identificationNumber": {
       "label": "{{selected_identification_type}} number"
     },
     "identificationCountry": {
       "label": "Country"
-    },
-    "gender": {
-      "label": "Gender"
-    },
-    "email": {
-      "label": "Email address"
-    },
-    "cellphone": {
-      "label": "Mobile number"
     }
   }
 }

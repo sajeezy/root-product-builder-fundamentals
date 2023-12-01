@@ -1,42 +1,31 @@
 [
   {
-    "key": "cover_option",
-    "type": "select",
-    "label": "Cover option *",
-    "options": [
-      {
-        "label": "Standard (R30 000)",
-        "value": "standard"
-      },
-      {
-        "label": "Premium (R50 000)",
-        "value": "premium"
-      }
-    ],
-    "outputPath": "cover_option",
-    "validators": [
-      {
-        "validation": {
-          "type": "required"
-        }
-      }
-    ]
-  },
-  {
     "key": "species",
     "type": "select",
+    "outputPath": "species",
     "label": "Species *",
     "options": [
       {
-        "label": "Dog",
-        "value": "dog"
+        "label": "Tyrannosaurus Rex",
+        "value": "Tyrannosaurus Rex"
       },
       {
-        "label": "Cat",
-        "value": "cat"
+        "label": "Stegosaurus",
+        "value": "Stegosaurus"
+      },
+      {
+        "label": "Velociraptor",
+        "value": "Velociraptor"
+      },
+      {
+        "label": "Diplodocus",
+        "value": "Diplodocus"
+      },
+      {
+        "label": "Iguanodon",
+        "value": "Iguanodon"
       }
     ],
-    "outputPath": "species",
     "validators": [
       {
         "validation": {
@@ -46,10 +35,39 @@
     ]
   },
   {
-    "key": "birth_year",
-    "type": "number",
+    "key": "start_date",
+    "type": "date-picker",
+    "label": "Start date *",
+    "outputPath": "start_date",
+    "validators": [
+      {
+        "validation": {
+          "type": "required"
+        }
+      }
+    ]
+  },
+  {
+    "key": "cover_amount",
+    "type": "currency",
+    "outputPath": "cover_amount",
+    "label": "Cover Amount *",
+    "props": {
+      "prefix": "R"
+    },
+    "validators": [
+      {
+        "validation": {
+          "type": "required"
+        }
+      }
+    ]
+  },
+  {
+    "key": "birth_date",
+    "type": "date-picker",
     "label": "Birth year *",
-    "outputPath": "birth_year",
+    "outputPath": "birth_date",
     "validators": [
       {
         "validation": {
@@ -59,24 +77,10 @@
     ]
   },
   {
-    "key": "high_risk_breed",
+    "key": "health_checks_updated",
     "type": "checkbox",
-    "label": "High risk breed *",
-    "outputPath": "high_risk_breed",
-    "validators": [
-      {
-        "validation": {
-          "type": "required"
-        }
-      }
-    ],
-    "defaultValue": false
-  },
-  {
-    "key": "sterilised",
-    "type": "checkbox",
-    "label": "Sterilised *",
-    "outputPath": "sterilised",
+    "label": "Health checks updated *",
+    "outputPath": "health_checks_updated",
     "validators": [
       {
         "validation": {
