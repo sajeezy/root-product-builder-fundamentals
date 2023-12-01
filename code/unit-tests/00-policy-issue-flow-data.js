@@ -7,7 +7,7 @@
 // Example quote data
 const quoteData = {
   cover_amount: 1000000,
-  birth_date: 1955,
+  birth_date: 1977,
   species: 'Tyrannosaurus Rex',
   start_date: '2023-12-15',
   health_checks_updated: true,
