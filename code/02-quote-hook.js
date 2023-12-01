@@ -28,10 +28,9 @@ const validateQuoteRequest = (data) => {
           .min(10000 * 100)
           .max(100000 * 100)
           .required(),
-        birth_date: Joi.number()
-          .integer()
-          .min(moment().year() - 50)
-          .max(moment().year())
+        birth_date: Joi.date()
+          .max(moment().toDate())
+          .min(moment().subtract(50, 'years').toDate())
           .required(),
         health_checks_updated: Joi.boolean().required(),
       })
