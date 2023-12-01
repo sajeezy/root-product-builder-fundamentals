@@ -44,12 +44,6 @@
         "validation": {
           "type": "required"
         }
-      },
-      {
-        "validation": {
-          "max": 60,
-          "type": "greaterThanNumber"
-        }
       }
     ]
   },
