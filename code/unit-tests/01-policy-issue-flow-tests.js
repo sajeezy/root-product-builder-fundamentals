@@ -24,9 +24,43 @@ describe('Policy issue flow', function () {
       expect(validationResult.error).to.equal(null);
     });
 
-    it('should return a suggested premium of <R12.34> (in cents)', function () {
-      quotePackage.suggested_premium = 7125;
-      expect(quotePackage.suggested_premium).to.equal(7125); // cents
+    it('invalid data should fail validation', function () {
+      const validationResult = validateQuoteRequest(invalidQuoteData);
+      expect(validationResult.error).to.not.equal(null);
+    });
+
+    it('20-year-old Tyrannosaurus Rex with R90,000.00 has a premium of R1458.00', function () {
+      const testQuoteData = {
+        ...quoteData,
+        birth_date: moment().year() - 20,
+        cover_amount: 90000.0,
+      };
+      const calculatedPremium = calculatePremium(testQuoteData);
+      expect(calculatedPremium).to.equal(1458.0);
+    });
+
+    it('a 36-year-old Velociraptor with R50,000.00 has a premium of R1368.00', function () {
+      const testQuoteData = {
+        ...quoteData,
+        birth_date: moment().year() - 36,
+        species: 'Velociraptor',
+        cover_amount: 50000.0,
+      };
+
+      const calculatedPremium = calculatePremium(testQuoteData);
+      expect(calculatedPremium).to.equal(1368.0);
+    });
+
+    it('a 16-year-old Brachiosaurus with R65,000.00 has a premium of R1372.80', function () {
+      const testQuoteData = {
+        ...quoteData,
+        birth_date: moment().year() - 16,
+        species: 'Brachiosaurus',
+        cover_amount: 65000.0,
+      };
+
+      const calculatedPremium = calculatePremium(testQuoteData);
+      expect(calculatedPremium).to.equal(1372.8);
     });
   });
 
