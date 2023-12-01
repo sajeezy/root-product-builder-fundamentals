@@ -9,6 +9,7 @@ describe('Policy issue flow', function () {
   let applicationPackage;
   before(function () {
     quotePackage = getQuote(quoteData)[0];
+
     applicationPackage = getApplication(
       applicationData,
       undefined,
@@ -32,35 +33,35 @@ describe('Policy issue flow', function () {
     it('20-year-old Tyrannosaurus Rex with R90,000.00 has a premium of R1458.00', function () {
       const testQuoteData = {
         ...quoteData,
-        birth_date: moment().year() - 20,
-        cover_amount: 90000.0,
+        birth_date: moment().subtract(20, 'years'),
+        cover_amount: 9000000,
       };
       const calculatedPremium = calculatePremium(testQuoteData);
-      expect(calculatedPremium).to.equal(1458.0);
+      expect(calculatedPremium).to.equal(145800);
     });
 
     it('a 36-year-old Velociraptor with R50,000.00 has a premium of R1368.00', function () {
       const testQuoteData = {
         ...quoteData,
-        birth_date: moment().year() - 36,
+        birth_date: moment().subtract(36, 'years'),
         species: 'Velociraptor',
-        cover_amount: 50000.0,
+        cover_amount: 5000000,
       };
 
       const calculatedPremium = calculatePremium(testQuoteData);
-      expect(calculatedPremium).to.equal(1368.0);
+      expect(calculatedPremium).to.equal(136800);
     });
 
     it('a 16-year-old Brachiosaurus with R65,000.00 has a premium of R1372.80', function () {
       const testQuoteData = {
         ...quoteData,
-        birth_date: moment().year() - 16,
+        birth_date: moment().subtract(16, 'years'),
         species: 'Brachiosaurus',
-        cover_amount: 65000.0,
+        cover_amount: 6500000,
       };
 
       const calculatedPremium = calculatePremium(testQuoteData);
-      expect(calculatedPremium).to.equal(1372.8);
+      expect(calculatedPremium).to.equal(137280);
     });
   });
 

@@ -2,7 +2,8 @@
 
 // add helper functions here
 function calculatePremium(data) {
-  const age = moment().year() - data.birth_date;
+  const age = moment().year() - moment(data.birth_date).year();
+
   let corePremium = data.cover_amount * (0.01 * (age * 0.001));
 
   switch (data.species) {
@@ -28,5 +29,6 @@ function calculatePremium(data) {
   }
 
   const premium = corePremium * 100;
-  return parseFloat(premium.toFixed(2));
+
+  return Math.round(premium);
 }
