@@ -15,7 +15,11 @@ const validateApplicationRequest = (data, policyholder, quote_package) => {
     data,
     Joi.object()
       .keys({
-        // keys and validation
+        name: Joi.string().max(100).required(),
+        colour: Joi.string()
+          .valid('Lilac', 'Sea green', 'Granite grey', 'Midnight blue')
+          .required(),
+        ndrn: Joi.number().integer().min(100000).max(999999).required(),
       })
       .required(),
     { abortEarly: false },
