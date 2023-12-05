@@ -3,7 +3,7 @@
     "key": "quote_package_id",
     "type": "text",
     "label": "Quote Package ID *",
-    "outputPath": "quote_package_id",
+    "outputPath": "quote_package.input_data.id",
     "validators": [
       {
         "validation": {
@@ -16,7 +16,7 @@
     "key": "policyholder_id",
     "type": "text",
     "label": "Policy Holder ID *",
-    "outputPath": "policyholder_id",
+    "outputPath": "policyholder.id",
     "validators": [
       {
         "validation": {
