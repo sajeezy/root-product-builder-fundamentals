@@ -65,29 +65,54 @@ describe('Policy issue flow', function () {
 
   // Application hook
   describe('Application hook', function () {
-    it('should pass application data validation ', function () {
+    // A payload with valid data passes validateApplicationRequest
+    it('valid data should pass validation ', function () {
       const validationResult = validateApplicationRequest(
         applicationData,
         undefined,
         undefined,
       );
-      console.log({ validationResult });
       expect(validationResult.error).to.equal(null);
     });
-    it('should return the correct module data', function () {
-      expect(applicationPackage.module.SOME_PROPERTY).to.equal(
-        '<SOME_PROPERTY>',
+
+    // A payload with invalid data fails validateApplicationRequest
+    it('invalid data should fail validation', function () {
+      const validationResult = validateApplicationRequest(
+        invalidApplicationData,
+        undefined,
+        undefined,
       );
+      expect(validationResult.error).to.not.equal(null);
+    });
+
+    // A created application has all of the data from the quote and application step.
+    it('should create an application with the correct parameters', function () {
+      expect(applicationPackage.package_name).to.equal(
+        quotePackage.package_name,
+      );
+      expect(applicationPackage.sum_assured).to.equal(quotePackage.sum_assured);
+      expect(applicationPackage.base_premium).to.equal(
+        quotePackage.base_premium,
+      );
+      expect(applicationPackage.monthly_premium).to.equal(
+        quotePackage.suggested_premium,
+      );
+      expect(applicationPackage.input_data).to.deep.equal(applicationData);
+      expect(applicationPackage.module).to.deep.equal({
+        ...quotePackage.module,
+        ...applicationData,
+      });
     });
   });
 
   // Policy issue hook
   describe('Policy issue hook', function () {
+    // A created policy has all of the data from the quote and application step.
     it('should create a policy with the correct parameters', function () {
       const policy = getPolicy(applicationPackage, undefined, undefined);
-      expect(policy.package_name).to.equal('<CORRECT PACKAGE NAME>');
-      expect(policy.monthly_premium).to.equal(1234);
-      expect(policy.sum_assured).to.equal(12345678);
+      expect(policy.package_name).to.equal('DinoSure Protection');
+      expect(policy.monthly_premium).to.equal(37260);
+      expect(policy.sum_assured).to.equal(1000000);
     });
   });
 });
