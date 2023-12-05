@@ -1,31 +1,5 @@
 [
   {
-    "key": "quote_package_id",
-    "type": "text",
-    "label": "Quote Package ID *",
-    "outputPath": "quote_package_id",
-    "validators": [
-      {
-        "validation": {
-          "type": "required"
-        }
-      }
-    ]
-  },
-  {
-    "key": "policyholder_id",
-    "type": "text",
-    "label": "Policy Holder ID *",
-    "outputPath": "policyholder_id",
-    "validators": [
-      {
-        "validation": {
-          "type": "required"
-        }
-      }
-    ]
-  },
-  {
     "key": "dinosaur_name",
     "type": "text",
     "label": "Dinosaur name *",
