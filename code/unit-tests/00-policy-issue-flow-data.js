@@ -23,5 +23,17 @@ const invalidQuoteData = {
 
 // Example application data
 const applicationData = {
-  // app-data
+  // quote_package_id: '77c375ff-4a0b-45e8-a0bd-745f16f461eb',
+  // policyholder_id: '3c0da21c-f418-486b-8683-eea8e01a8582',
+  name: 'James Dean',
+  colour: 'Lilac',
+  ndrn: 100001,
+};
+
+const invalidApplicationData = {
+  // quote_package_id: '77c375ff-4a0b-45e8-a0bd-745f16f461eb',
+  // policyholder_id: '3c0da21c-f418-486b-8683-eea8e01a8582',
+  name: 'James Dean',
+  colour: 'Brown',
+  ndrn: 10000,
 };
