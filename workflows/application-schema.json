@@ -1,9 +1,9 @@
 [
   {
-    "key": "dinosaur_name",
+    "key": "name",
     "type": "text",
     "label": "Dinosaur name *",
-    "outputPath": "dinosaur_name",
+    "outputPath": "name",
     "validators": [
       {
         "validation": {
@@ -13,9 +13,9 @@
     ]
   },
   {
-    "key": "dinosaur_colour",
+    "key": "colour",
     "type": "select",
-    "outputPath": "dinosaur_colour",
+    "outputPath": "colour",
     "label": "Dinosaur color *",
     "options": [
       {
