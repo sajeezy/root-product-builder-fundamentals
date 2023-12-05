@@ -71,6 +71,7 @@ describe('Policy issue flow', function () {
         undefined,
         undefined,
       );
+      console.log({ validationResult });
       expect(validationResult.error).to.equal(null);
     });
     it('should return the correct module data', function () {

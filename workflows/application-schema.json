@@ -1,9 +1,9 @@
 [
   {
-    "key": "pet_name",
+    "key": "quote_package_id",
     "type": "text",
-    "label": "Pet name *",
-    "outputPath": "pet_name",
+    "label": "Quote Package ID *",
+    "outputPath": "quote_package_id",
     "validators": [
       {
         "validation": {
@@ -13,10 +13,10 @@
     ]
   },
   {
-    "key": "pet_breed",
+    "key": "policyholder_id",
     "type": "text",
-    "label": "Pet breed *",
-    "outputPath": "pet_breed",
+    "label": "Policy Holder ID *",
+    "outputPath": "policyholder_id",
     "validators": [
       {
         "validation": {
@@ -26,10 +26,10 @@
     ]
   },
   {
-    "key": "pet_colour",
+    "key": "dinosaur_name",
     "type": "text",
-    "label": "Pet colour *",
-    "outputPath": "pet_colour",
+    "label": "Dinosaur name *",
+    "outputPath": "dinosaur_name",
     "validators": [
       {
         "validation": {
@@ -39,20 +39,41 @@
     ]
   },
   {
-    "key": "pet_gender",
+    "key": "dinosaur_colour",
     "type": "select",
-    "label": "Pet gender *",
+    "outputPath": "dinosaur_colour",
+    "label": "Dinosaur color *",
     "options": [
       {
-        "label": "Male",
-        "value": "male"
+        "label": "Lilac",
+        "value": "Lilac"
       },
       {
-        "label": "Female",
-        "value": "female"
+        "label": "Sea green",
+        "value": "Sea green"
+      },
+      {
+        "label": "Granite grey",
+        "value": "Granite grey"
+      },
+      {
+        "label": "Midnight blue",
+        "value": "Midnight blue"
       }
     ],
-    "outputPath": "pet_gender",
+    "validators": [
+      {
+        "validation": {
+          "type": "required"
+        }
+      }
+    ]
+  },
+  {
+    "key": "ndrn",
+    "type": "text",
+    "label": "National Dinosaur Registry Number (NDRN) *",
+    "outputPath": "ndrn",
     "validators": [
       {
         "validation": {
