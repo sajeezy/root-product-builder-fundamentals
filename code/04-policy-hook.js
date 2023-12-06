@@ -9,6 +9,7 @@
  */
 const getPolicy = (application, policyholder, billing_day) => {
   const policy = new Policy({
+    policy_number: generatePolicyNumber(),
     package_name: application.package_name,
     sum_assured: application.sum_assured,
     base_premium: application.base_premium,

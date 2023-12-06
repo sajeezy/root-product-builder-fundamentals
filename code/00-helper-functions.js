@@ -32,3 +32,8 @@ function calculatePremium(data) {
 
   return Math.round(premium);
 }
+
+// @ts-ignore
+const generatePolicyNumber = () => {
+  return '8CE463A4A6';
+};
