@@ -19,12 +19,16 @@ const validateAlterationPackageRequest = ({
 }) => {
   let validationResult;
   switch (alteration_hook_key) {
-    case 'KEY':
+    case 'modify_cover_amount':
       validationResult = Joi.validate(
         data,
         Joi.object()
           .keys({
-            // keys and validation
+            cover_amount: Joi.number()
+              .integer()
+              .min(10000 * 100)
+              .max(100000 * 100)
+              .required(),
           })
           .required(),
         { abortEarly: false },
@@ -50,12 +54,12 @@ const validateAlterationPackageRequest = ({
 const getAlteration = ({ alteration_hook_key, data, policy, policyholder }) => {
   let alterationPackage;
   switch (alteration_hook_key) {
-    case 'KEY':
+    case 'modify_cover_amount':
       alterationPackage = new AlterationPackage({
         input_data: data,
         sum_assured: policy.sum_assured,
         monthly_premium: policy.monthly_premium,
-        change_description: 'DESCRIPTION OF ALTERATION',
+        change_description: 'Cover amount changed',
         module: {
           ...policy.module,
           ...data,
@@ -87,7 +91,7 @@ const applyAlteration = ({
 }) => {
   let alteredPolicy;
   switch (alteration_hook_key) {
-    case 'KEY':
+    case 'modify_cover_amount':
       alteredPolicy = new AlteredPolicy({
         package_name: policy.package_name,
         sum_assured: policy.sum_assured,
