@@ -63,12 +63,11 @@ const beforePolicyReactivated = ({
 
   const newModule = {
     ...policy.module,
-    start_date: policy.start_date,
+    reactivation_date: '2024-01-01', //policy.start_date,
   };
 
   return [
     {
-      // name: 'activate_policy',
       name: 'update_policy',
       data: {
         module: newModule,
