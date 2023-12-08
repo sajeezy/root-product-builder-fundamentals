@@ -152,7 +152,10 @@
         "pending_initial_payment"
       ],
       "frequency": {
-        "type": "yearly"
+        "type": "yearly",
+        "monthOfYear": "january",
+        "dayOfMonth": 1,
+        "timeOfDay": "08:00"
       }
     }
   ],
