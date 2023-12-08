@@ -60,7 +60,21 @@ const beforePolicyReactivated = ({
       )}`,
     );
   }
-  setReactivationDate({ policy, reactivation_date: moment() });
+
+  const newModule = {
+    ...policy.module,
+    start_date: policy.start_date,
+  };
+
+  return [
+    {
+      // name: 'activate_policy',
+      name: 'update_policy',
+      data: {
+        module: newModule,
+      },
+    },
+  ];
 };
 
 const setReactivationDate = ({ policy, reactivation_date }) => {
@@ -69,7 +83,6 @@ const setReactivationDate = ({ policy, reactivation_date }) => {
     start_date: reactivation_date,
   };
 
-  console.log('newModule', newModule);
   return [
     {
       // name: 'activate_policy',
