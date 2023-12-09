@@ -7,7 +7,7 @@ const updateCoverInvalid = {};
 describe('Alteration hook tests', () => {
   // Update grade alteration
   describe('Update cover amount alterations', () => {
-    const alterationHookKey = 'XXXX'; // add alteration hook key
+    const alterationHookKey = 'modify_cover_amount'; // add alteration hook key
 
     it('should pass validation', () => {
       const validationResult = validateAlterationPackageRequest({

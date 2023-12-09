@@ -5,12 +5,21 @@
 
 const validAlterationData = {
   // valid data for alteration
+  cover_amount: 7500000,
 };
 
 const invalidAlterationData = {
   // invalid data for alteration
+  cover_amount: 10,
 };
 
 const examplePolicy = {
   // copy policy object here
+  policy_number: generatePolicyNumber(),
+  package_name: 'DinoSure Protection', // The name of the "package" of cover
+  sum_assured: 7500000,
+  base_premium: 10000,
+  monthly_premium: 205200,
+  start_date: moment().add(1, 'day').format(), // policy starts the day after issue
+  end_date: null,
 };

@@ -134,7 +134,12 @@
       }
     }
   },
-  "alterationHooks": [],
+  "alterationHooks": [
+    {
+      "key": "modify_cover_amount",
+      "name": "Modify cover amount"
+    }
+  ],
   "scheduledFunctions": [],
   "fulfillmentTypes": [
     {
