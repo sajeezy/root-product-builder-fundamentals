@@ -48,22 +48,9 @@ const beforePolicyReactivated = ({
     );
   }
 
-  // Check policy was active within the last six months
-  const sixMonthsFromUpdated = moment(policy.status_updated_at).add(
-    6,
-    'months',
-  );
-  if (isPolicyLapsedOrCancelled && moment().isAfter(sixMonthsFromUpdated)) {
-    throw new Error(
-      `Policy can only be reactivated within 6 months of lapse or cancellation. Latest reactivation date was ${sixMonthsFromUpdated.format(
-        'YYYY-MM-DD',
-      )}`,
-    );
-  }
-
   const newModule = {
     ...policy.module,
-    reactivation_date: '2024-03-01', //policy.start_date,
+    reactivation_date: moment().format('YYYY-MM-DD'),
   };
 
   return [
