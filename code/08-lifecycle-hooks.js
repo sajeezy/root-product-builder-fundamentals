@@ -6,15 +6,7 @@
  * @return {ReactivationOption[]} One of these options must be selected whenever an inactive policy is reactivated.
  */
 const getReactivationOptions = (policy) => {
-  const settlementAmount = policy.balance < 0 ? -policy.balance : 0;
   return [
-    new ReactivationOption({
-      type: 'reinstatement',
-      settlementAmount,
-      description:
-        'For a policy to be reinstated, all arrear premiums will immediately be due.',
-      minimumBalanceRequired: true,
-    }),
     new ReactivationOption({
       type: 'recommencement',
       description:
