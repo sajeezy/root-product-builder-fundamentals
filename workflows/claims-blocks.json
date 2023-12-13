@@ -91,19 +91,58 @@
       "type": "dropdown",
       "title": "Bank Name",
       "options": [
-        { "key": "absa", "value": "Absa" },
-        { "key": "african_bank", "value": "African Bank" },
-        { "key": "bidvest", "value": "Bidvest" },
-        { "key": "capitec", "value": "Capitec" },
-        { "key": "discovery_bank", "value": "Discovery Bank" },
-        { "key": "fnb", "value": "Fnb" },
-        { "key": "investec", "value": "Investec" },
-        { "key": "ithala", "value": "Ithala" },
-        { "key": "nedbank", "value": "Nedbank" },
-        { "key": "old_mutual", "value": "Old Mutual" },
-        { "key": "postbank", "value": "Postbank" },
-        { "key": "standard_bank", "value": "Standard Bank" },
-        { "key": "tyme_bank", "value": "Tyme Bank" }
+        {
+          "key": "absa",
+          "value": "Absa"
+        },
+        {
+          "key": "african_bank",
+          "value": "African Bank"
+        },
+        {
+          "key": "bidvest",
+          "value": "Bidvest"
+        },
+        {
+          "key": "capitec",
+          "value": "Capitec"
+        },
+        {
+          "key": "discovery_bank",
+          "value": "Discovery Bank"
+        },
+        {
+          "key": "fnb",
+          "value": "Fnb"
+        },
+        {
+          "key": "investec",
+          "value": "Investec"
+        },
+        {
+          "key": "ithala",
+          "value": "Ithala"
+        },
+        {
+          "key": "nedbank",
+          "value": "Nedbank"
+        },
+        {
+          "key": "old_mutual",
+          "value": "Old Mutual"
+        },
+        {
+          "key": "postbank",
+          "value": "Postbank"
+        },
+        {
+          "key": "standard_bank",
+          "value": "Standard Bank"
+        },
+        {
+          "key": "tyme_bank",
+          "value": "Tyme Bank"
+        }
       ],
       "default_value": "ABSA"
     }
