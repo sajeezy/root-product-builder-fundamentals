@@ -204,6 +204,6 @@
         }
       }
     },
-    "disabled_if": "{{ifCondition claim.approval_status '!==' 'approved' || ifCondition claim.approval_status '!==' 'goodwill'}}"
+    "disabled_if": "{{#if (if claim.approval_status '!==' 'approved') '&&' (if claim.approval_status '!==' 'goodwill') }}true{{else}}false{{/if}}"
   }
 ]
