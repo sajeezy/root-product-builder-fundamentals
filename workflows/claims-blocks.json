@@ -55,7 +55,7 @@
       "markdown": "Warning: Claim for illness must be outside of the waiting period of 1 month."
     },
     "show_if": "{{ifCondition (dateDifference claim.block_states.incident_date.value claim.policy.start_date measurement='days') '<' 30}}",
-    "hide_if": "{{ifCondition claim.block_states.claim_type.key '==' 'death'}}"
+    "hide_if": "{{ifCondition claim.block_states.claim_type.option_key '===' 'death'}}"
   },
   {
     "block": {
@@ -65,7 +65,7 @@
       "markdown": "Warning: Claim for death must be outside of the waiting period of 1 month."
     },
     "show_if": "{{ifCondition (dateDifference claim.block_states.incident_date.value claim.policy.start_date measurement='days') '<' 90}}",
-    "hide_if": "{{ifCondition claim.block_states.claim_type.key '==' 'illness'}}"
+    "hide_if": "{{ifCondition claim.block_states.claim_type.option_key '===' 'illness'}}"
   },
   {
     "block": {
