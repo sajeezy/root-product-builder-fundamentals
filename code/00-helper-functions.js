@@ -4,7 +4,8 @@
 function calculatePremium(data) {
   const age = moment().year() - moment(data.birth_date).year();
 
-  let corePremium = data.cover_amount * (0.01 * (age * 0.001));
+  const coverAmount = data.cover_amount || data.sum_assured;
+  let corePremium = coverAmount * (0.01 * (age * 0.001));
 
   switch (data.species) {
     case 'Tyrannosaurus Rex':

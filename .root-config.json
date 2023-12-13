@@ -140,7 +140,25 @@
       "name": "Modify cover amount"
     }
   ],
-  "scheduledFunctions": [],
+  "scheduledFunctions": [
+    {
+      "functionName": "applyAnnualIncrease",
+      "policyStatuses": [
+        "not_taken_up",
+        "cancelled",
+        "active",
+        "lapsed",
+        "expired",
+        "pending_initial_payment"
+      ],
+      "frequency": {
+        "type": "yearly",
+        "monthOfYear": "january",
+        "dayOfMonth": 1,
+        "timeOfDay": "08:00"
+      }
+    }
+  ],
   "fulfillmentTypes": [
     {
       "key": "extraction",
