@@ -35,11 +35,11 @@
            -u [API Key]: 
            -H "Content-Type: application/json" 
            -d '{
-            "start_date": "1925-10-17T22:13:04.0Z",
-            "cover_amount": 4520022,
-            "birth_date": "1929-08-25T15:19:26.0Z",
-            "species": "Tyrannosaurus Rex",
-            "health_checks_updated": false
+            "start_date": "1969-11-22T17:49:21.0Z",
+            "cover_amount": 1500669,
+            "birth_date": "1924-01-19T16:24:19.0Z",
+            "species": "Diplodocus",
+            "health_checks_updated": true
           }'
     - id: '[Add ID]-quote-request'
       type: code
@@ -47,11 +47,11 @@
       languages:
         json: |-
           {
-            "start_date": "1925-10-17T22:13:04.0Z",
-            "cover_amount": 4520022,
-            "birth_date": "1929-08-25T15:19:26.0Z",
-            "species": "Tyrannosaurus Rex",
-            "health_checks_updated": false
+            "start_date": "1969-11-22T17:49:21.0Z",
+            "cover_amount": 1500669,
+            "birth_date": "1924-01-19T16:24:19.0Z",
+            "species": "Diplodocus",
+            "health_checks_updated": true
           }
       forceLanguage: json
 - id: dinosure_course_steven-application
@@ -87,9 +87,9 @@
            -u [API Key]: 
            -H "Content-Type: application/json" 
            -d '{
-            "name": "sunt laborum ullamco dolore",
-            "colour": "Granite grey",
-            "ndrn": 567351
+            "name": "laboris laborum",
+            "colour": "Lilac",
+            "ndrn": 876416
           }'
     - id: '[Add ID]-application-request'
       type: code
@@ -97,8 +97,8 @@
       languages:
         json: |-
           {
-            "name": "sunt laborum ullamco dolore",
-            "colour": "Granite grey",
-            "ndrn": 567351
+            "name": "laboris laborum",
+            "colour": "Lilac",
+            "ndrn": 876416
           }
       forceLanguage: json
