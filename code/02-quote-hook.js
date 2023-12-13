@@ -72,3 +72,29 @@ const getQuote = (data) => {
   });
   return [quotePackage];
 };
+
+const quoteSchema = Joi.object().keys({
+  start_date: Joi.date()
+    .min(moment().toDate())
+    .max(moment().add(60, 'days').toDate())
+    .required(),
+  cover_amount: Joi.number()
+    .integer()
+    .min(10000 * 100)
+    .max(100000 * 100)
+    .required(),
+  birth_date: Joi.date()
+    .min(moment().subtract(50, 'years').toDate())
+    .max(moment().toDate())
+    .required(),
+  species: Joi.string()
+    .valid(
+      'Tyrannosaurus Rex',
+      'Stegosaurus',
+      'Velociraptor',
+      'Diplodocus',
+      'Iguanodon',
+    )
+    .required(),
+  health_checks_updated: Joi.boolean().required(),
+});
