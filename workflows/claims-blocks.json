@@ -142,22 +142,24 @@
     }
   },
   {
-    "type": "payout_request",
-    "key": "payout_block",
-    "title": "Dinosaur Payout Block",
-    "description": "Payout for the injured or deceased dinosaur",
-    "payee": {
-      "type": "{{ policyholder }}",
-      "amount": "{{claim.policy.module.sum_assured}}",
-      "percentage": 100,
-      "payment_details": {
-        "type": "eft",
-        "details": {
-          "name": "{{claim.policy.module.name}}",
-          "bank_name": "{{claim.block_states.bank_name.value}}",
-          "bank_code": "{{claim.block_states.bank_code.value}}",
-          "account_type": "{{claim.block_states.account_type.value}}",
-          "account_number": "{{claim.block_states.account_number.value}}"
+    "block": {
+      "type": "payout_request",
+      "key": "payout_block",
+      "title": "Dinosaur Payout Block",
+      "description": "Payout for the injured or deceased dinosaur",
+      "payee": {
+        "type": "{{ policyholder }}",
+        "amount": "{{claim.policy.module.sum_assured}}",
+        "percentage": 100,
+        "payment_details": {
+          "type": "eft",
+          "details": {
+            "name": "{{claim.policy.module.name}}",
+            "bank_name": "{{claim.block_states.bank_name.value}}",
+            "bank_code": "{{claim.block_states.bank_code.value}}",
+            "account_type": "{{claim.block_states.account_type.value}}",
+            "account_number": "{{claim.block_states.account_number.value}}"
+          }
         }
       }
     }
