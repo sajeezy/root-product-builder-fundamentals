@@ -196,7 +196,7 @@
         "payment_details": {
           "type": "eft",
           "details": {
-            "bank_name": "{{claim.block_states.bank_name.value}}",
+            "bank_name": "{{claim.block_states.bank_name.option_value}}",
             "branch_code": "{{claim.block_states.bank_code.value}}",
             "account_type": "{{claim.block_states.account_type.value}}",
             "account_number": "{{claim.block_states.account_number.value}}"
