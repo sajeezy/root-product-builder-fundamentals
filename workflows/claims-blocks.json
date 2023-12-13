@@ -147,6 +147,7 @@
       "key": "payout_block",
       "title": "Dinosaur Payout Block",
       "description": "Payout for the injured or deceased dinosaur",
+      "amount": "{{claim.policy.module.sum_assured}}",
       "payee": {
         "type": "{{ policyholder }}",
         "amount": "{{claim.policy.module.sum_assured}}",
