@@ -35,10 +35,10 @@
            -u [API Key]: 
            -H "Content-Type: application/json" 
            -d '{
-            "start_date": "1969-11-22T17:49:21.0Z",
-            "cover_amount": 1500669,
-            "birth_date": "1924-01-19T16:24:19.0Z",
-            "species": "Diplodocus",
+            "start_date": "1957-12-26T02:55:03.0Z",
+            "cover_amount": 9569069,
+            "birth_date": "1923-05-08T08:49:10.0Z",
+            "species": "Stegosaurus",
             "health_checks_updated": true
           }'
     - id: '[Add ID]-quote-request'
@@ -47,10 +47,10 @@
       languages:
         json: |-
           {
-            "start_date": "1969-11-22T17:49:21.0Z",
-            "cover_amount": 1500669,
-            "birth_date": "1924-01-19T16:24:19.0Z",
-            "species": "Diplodocus",
+            "start_date": "1957-12-26T02:55:03.0Z",
+            "cover_amount": 9569069,
+            "birth_date": "1923-05-08T08:49:10.0Z",
+            "species": "Stegosaurus",
             "health_checks_updated": true
           }
       forceLanguage: json
@@ -87,9 +87,9 @@
            -u [API Key]: 
            -H "Content-Type: application/json" 
            -d '{
-            "name": "laboris laborum",
-            "colour": "Lilac",
-            "ndrn": 876416
+            "name": "elit culpa Excepteur laborum",
+            "colour": "Midnight blue",
+            "ndrn": 954560
           }'
     - id: '[Add ID]-application-request'
       type: code
@@ -97,8 +97,8 @@
       languages:
         json: |-
           {
-            "name": "laboris laborum",
-            "colour": "Lilac",
-            "ndrn": 876416
+            "name": "elit culpa Excepteur laborum",
+            "colour": "Midnight blue",
+            "ndrn": 954560
           }
       forceLanguage: json
