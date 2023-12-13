@@ -155,7 +155,6 @@
         "payment_details": {
           "type": "eft",
           "details": {
-            "name": "{{claim.policy.module.name}}",
             "bank_name": "{{claim.block_states.bank_name.value}}",
             "branch_code": "{{claim.block_states.bank_code.value}}",
             "account_type": "{{claim.block_states.account_type.value}}",
