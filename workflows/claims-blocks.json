@@ -202,7 +202,8 @@
             "account_number": "{{claim.block_states.account_number.value}}"
           }
         }
-      }
+      },
+      "disabled_if": "{{ifCondition (ifCondition claim.approval_status '!==' 'approved') || (ifCondition claim.approval_status '!==' 'goodwill')}}"
     }
   }
 ]
