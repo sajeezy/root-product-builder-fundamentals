@@ -54,7 +54,8 @@
       "color": "danger",
       "markdown": "Warning: Claim for illness must be outside of the waiting period of 1 month."
     },
-    "show_if": "{{ifCondition (dateDifference claim.block_states.incident_date.value claim.policy.start_date measurement='days') '<' 30}}"
+    "show_if": "{{ifCondition (dateDifference claim.block_states.incident_date.value claim.policy.start_date measurement='days') '<' 30}}",
+    "hide_if": "{{ifCondition claim.block_states.claim_type.key '==' 'death'}}"
   },
   {
     "block": {
@@ -63,7 +64,8 @@
       "color": "danger",
       "markdown": "Warning: Claim for death must be outside of the waiting period of 1 month."
     },
-    "show_if": "{{ifCondition (dateDifference claim.block_states.incident_date.value claim.policy.start_date measurement='days') '<' 90}}"
+    "show_if": "{{ifCondition (dateDifference claim.block_states.incident_date.value claim.policy.start_date measurement='days') '<' 90}}",
+    "hide_if": "{{ifCondition claim.block_states.claim_type.key '==' 'illness'}}"
   },
   {
     "block": {
@@ -189,7 +191,7 @@
       "amount": "{{claim.policy.module.sum_assured}}",
       "payee": {
         "type": "{{ policyholder }}",
-        "amount": "{{claim.policy.module.sum_assured}}",
+        "amount": "{{claim.policy.module.cover_amount}}",
         "percentage": 100,
         "payment_details": {
           "type": "eft",
