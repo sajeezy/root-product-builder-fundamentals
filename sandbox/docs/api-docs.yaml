@@ -1,0 +1,104 @@
+- id: dinosure_course_steven-quote
+  title: '[Add Title]'
+  hideInSidebar: true
+  copyComponents:
+    id: dinosure_course_steven
+    type: list
+    title: '[Add Title]'
+    content:
+      - type: markdown
+        content: '[Add Description]'
+      - label: start_date
+        markdownDescription: _date_. [Add Description]
+      - label: cover_amount
+        markdownDescription: _number_. [Add Description]
+      - label: birth_date
+        markdownDescription: _date_. [Add Description]
+      - label: species
+        markdownDescription: _string_. [Add Description]
+      - label: health_checks_updated
+        markdownDescription: _boolean_. [Add Description]
+  exampleComponents:
+    - id: '[Add ID]-quote-endpoint'
+      type: code
+      blockType: endpoint
+      languages:
+        bash: POST https://sandbox.rootplatform.com//v1/insurance/quotes
+      forceLanguage: bash
+    - id: '[Add ID]-quote-request'
+      type: code
+      blockType: request
+      languages:
+        curl: >-
+          curl https://sandbox.rootplatform.com//v1/insurance/quotes --request
+          POST 
+           -u [API Key]: 
+           -H "Content-Type: application/json" 
+           -d '{
+            "start_date": "1925-10-17T22:13:04.0Z",
+            "cover_amount": 4520022,
+            "birth_date": "1929-08-25T15:19:26.0Z",
+            "species": "Tyrannosaurus Rex",
+            "health_checks_updated": false
+          }'
+    - id: '[Add ID]-quote-request'
+      type: code
+      blockType: response
+      languages:
+        json: |-
+          {
+            "start_date": "1925-10-17T22:13:04.0Z",
+            "cover_amount": 4520022,
+            "birth_date": "1929-08-25T15:19:26.0Z",
+            "species": "Tyrannosaurus Rex",
+            "health_checks_updated": false
+          }
+      forceLanguage: json
+- id: dinosure_course_steven-application
+  title: '[Add Title]'
+  hideInSidebar: true
+  copyComponents:
+    id: dinosure_course_steven
+    type: list
+    title: '[Add Title]'
+    content:
+      - type: markdown
+        content: '[Add Description]'
+      - label: name
+        markdownDescription: _string_. [Add Description]
+      - label: colour
+        markdownDescription: _string_. [Add Description]
+      - label: ndrn
+        markdownDescription: _number_. [Add Description]
+  exampleComponents:
+    - id: '[Add ID]-application-endpoint'
+      type: code
+      blockType: endpoint
+      languages:
+        bash: POST https://sandbox.rootplatform.com//v1/insurance/applications
+      forceLanguage: bash
+    - id: '[Add ID]-application-request'
+      type: code
+      blockType: request
+      languages:
+        curl: >-
+          curl https://sandbox.rootplatform.com//v1/insurance/applications
+          --request POST 
+           -u [API Key]: 
+           -H "Content-Type: application/json" 
+           -d '{
+            "name": "sunt laborum ullamco dolore",
+            "colour": "Granite grey",
+            "ndrn": 567351
+          }'
+    - id: '[Add ID]-application-request'
+      type: code
+      blockType: response
+      languages:
+        json: |-
+          {
+            "name": "sunt laborum ullamco dolore",
+            "colour": "Granite grey",
+            "ndrn": 567351
+          }
+      forceLanguage: json
